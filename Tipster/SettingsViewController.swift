@@ -25,18 +25,18 @@ class SettingsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func percentage1Edit(sender: AnyObject) {
-        var tip1 = (tipField1.text._bridgeToObjectiveC().doubleValue)/100
+        let tip1 = (tipField1.text!._bridgeToObjectiveC().doubleValue)/100
         defaults.setDouble(tip1 ,forKey:"tip1")
         defaults.synchronize();
     }
 
     @IBAction func percentage2Edit(sender: AnyObject) {
-        var tip2 = (tipField2.text._bridgeToObjectiveC().doubleValue)/100
+        let tip2 = (tipField2.text!._bridgeToObjectiveC().doubleValue)/100
         defaults.setDouble(tip2 ,forKey:"tip2")
         defaults.synchronize();
     }
     @IBAction func percentage3Edit(sender: AnyObject) {
-        var tip3 = (tipField3.text._bridgeToObjectiveC().doubleValue)/100
+        let tip3 = (tipField3.text!._bridgeToObjectiveC().doubleValue)/100
         defaults.setDouble(tip3 ,forKey:"tip3")
         defaults.synchronize();
 
